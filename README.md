@@ -3,6 +3,7 @@ SYNSNOOP: A TCP SYN Flood Attack Detection and Mitigation Mechanism in GNU/Linux
 ___________________________________________________________________________________________
 
 
+
 SYNSNOOP is an integrated mechanism for detection and mitigation against the TCP SYN Flood 
 Attack. 
 

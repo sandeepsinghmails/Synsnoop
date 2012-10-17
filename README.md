@@ -1,4 +1,3 @@
-===========================================================================================
 SYNSNOOP: A TCP SYN Flood Attack Detection and Mitigation Mechanism in GNU/Linux Kernel 2.6
 ===========================================================================================
 
@@ -22,8 +21,8 @@ Setup Information:
 Replace the following files of the GNU/Linux Kernel Source Code with the corresponding 
 SYSNOOP files:
 
-- linux-2.6.x.x/include/net/ip.h
-- linux-2.6.x.x/net/ipv4/ip_input.c
+* linux-2.6.x.x/include/net/ip.h
+* linux-2.6.x.x/net/ipv4/ip_input.c
 
 Compile the GNU/Linux Kernel Source Code.
 

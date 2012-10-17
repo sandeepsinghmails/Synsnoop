@@ -1,18 +1,18 @@
-=======================================================================================
+===========================================================================================
 
-SYNSNOOP: A TCP SYN Flood Attack Detection and Mitigation Mechanism in Linux Kernel 2.6
+SYNSNOOP: A TCP SYN Flood Attack Detection and Mitigation Mechanism in GNU/Linux Kernel 2.6
 
-=======================================================================================
+===========================================================================================
 
-SYNSNOOP is an integrated mechanism for detection and mitigation against the TCP SYN 
-Flood Attack. 
+SYNSNOOP is an integrated mechanism for detection and mitigation against the TCP SYN Flood 
+Attack. 
 
-The SYNSNOOP mechanism enhances the Linux Kernel 2.6 IP code to support 'SNOOPING' of 
-TCP related information for countering DoS attacks, using Shannon Entropy.
+The SYNSNOOP mechanism enhances the Linux Kernel 2.6 IP code to support 'SNOOPING' of TCP 
+related information for countering DoS attacks, using Shannon Entropy.
 
-It saves the effort of processing all the TCP SYN requests under TCP protocol 
-mechanisms. All the traffic analysis is completed even before the initiation of normal
-IP and TCP protocol functionality. 
+It saves the effort of processing all the TCP SYN requests under TCP protocol mechanisms. 
+All the traffic analysis is completed even before the initiation of normal IP and TCP 
+protocol functionality. 
 
 ==================
 

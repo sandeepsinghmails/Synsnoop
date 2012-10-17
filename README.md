@@ -11,11 +11,9 @@ It saves the effort of processing all the TCP SYN requests under TCP protocol me
 All the traffic analysis is completed even before the initiation of normal IP and TCP 
 protocol functionality. 
 
-==================
 
-Setup Information:
+*Setup Information:*
 
-==================
 
 Replace the following files of the GNU/Linux Kernel Source Code with the corresponding 
 SYSNOOP files:

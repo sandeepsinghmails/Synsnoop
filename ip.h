@@ -110,10 +110,10 @@ extern int		igmp_mc_proc_init(void);
  */
 
 
-/* Changes for SYNSNOOP Starts here */
+/* Code for SYNSNOOP Starts here */
 extern int decision(__be16);
 extern int floorlog2(int);
-/* Changes for SYNSNOOP Ends here */
+/* Code for SYNSNOOP Ends here */
 
 extern int		ip_build_and_send_pkt(struct sk_buff *skb, struct sock *sk,
 					      __be32 saddr, __be32 daddr,

@@ -140,9 +140,9 @@
 #include <linux/kernel.h>
 #include <linux/string.h>
 #include <linux/errno.h>
-/* Changes for SYNSNOOP Starts here */
+/* Code for SYNSNOOP Starts here */
 #include <linux/slab.h>
-/* Changes for SYNSNOOP Ends here */
+/* Code for SYNSNOOP Ends here */
 
 #include <linux/net.h>
 #include <linux/socket.h>
@@ -155,9 +155,9 @@
 
 #include <net/snmp.h>
 #include <net/ip.h>
-/* Changes for SYNSNOOP Starts here */
+/* Code for SYNSNOOP Starts here */
 #include <net/tcp.h>
-/* Changes for SYNSNOOP Ends here */
+/* Code for SYNSNOOP Ends here */
 #include <net/protocol.h>
 #include <net/route.h>
 #include <linux/skbuff.h>
@@ -174,9 +174,9 @@
 /*
  *	Process Router Attention IP option
  */
-/* Changes for SYNSNOOP Starts here */
+/* Code for SYNSNOOP Starts here */
 int decide (__be16);
-/* Changes for SYNSNOOP Ends here */
+/* Code for SYNSNOOP Ends here */
 
 int ip_call_ra_chain(struct sk_buff *skb)
 {
@@ -403,19 +403,19 @@ drop:
 int ip_rcv(struct sk_buff *skb, struct net_device *dev, struct packet_type *pt, struct net_device *orig_dev)
 {
 	struct iphdr *iph;
-	/* Changes for SYNSNOOP Starts here */
+	/* Code for SYNSNOOP Starts here */
 	struct tcphdr *tcph;
-	/* Changes for SYNSNOOP Ends here */
+	/* Code for SYNSNOOP Ends here */
 	u32 len;
 
-	/* Changes for SYNSNOOP Starts here */
+	/* Code for SYNSNOOP Starts here */
 	iph = ip_hdr(skb);
 	tcph = tcp_hdr(skb);
 
 	if((iph->protocol == IPPROTO_TCP) && (tcph->syn == TCP_FLAG_SYN)) 
 		if(decide(tcph->dest) == 0) 	
 			goto drop;	
-	/* Changes for SYNSNOOP Ends here */
+	/* Code for SYNSNOOP Ends here */
 
 	/* When the interface is in promisc. mode, drop all the crap
 	 * that it receives, do not try to analyse it.
@@ -487,7 +487,7 @@ out:
 	return NET_RX_DROP;
 }
 
-/* Changes for SYNSNOOP Starts here */
+/* Code for SYNSNOOP Starts here */
 int total_seg;
 
 struct tcp_snoop {
@@ -583,4 +583,4 @@ int floorlog2(int n)
   	return ((n == 0) ? (-1) : pos);
 }
 
-/* Changes for SYNSNOOP Ends here */
+/* Code for SYNSNOOP Ends here */

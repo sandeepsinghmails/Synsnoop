@@ -26,5 +26,10 @@ Compile the GNU/Linux Kernel Source Code.
 
 *Graphs:*
 
-![System without SYNSNOOP](https://raw.github.com/sandeepsinghmails/synsnoop/master/images/screenshot1.jpeg "System without SYNSNOOP")
-![System with SYNSNOOP](https://raw.github.com/sandeepsinghmails/synsnoop/master/images/screenshot2.jpeg "System with SYNSNOOP")
+Bandwidth Measurement of a Normal System under DoS Attack:
+
+![System without SYNSNOOP](https://raw.github.com/sandeepsinghmails/synsnoop/master/images/screenshot1.jpeg)
+
+Bandwidth Measurement of a ‘SYNSNOOP’ System under DoS Attack:
+
+![System with SYNSNOOP](https://raw.github.com/sandeepsinghmails/synsnoop/master/images/screenshot2.jpeg)

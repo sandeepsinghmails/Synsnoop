@@ -114,9 +114,10 @@
  *
  * SYNSNOOP:
  *
- *		Author: Sandeep Singh
+ *		Authors: Sandeep Singh, Sachin Jain
  * 
  * 		Copyright 2012 Sandeep Singh (sandeepsinghmails@gmail.com)
+ *                             Sachin Jain   (sachinjainmail@gmail.com)
  *
  * 		This file is part of SYNSNOOP.
  * 		SYNSNOOP is free software: you can redistribute it
